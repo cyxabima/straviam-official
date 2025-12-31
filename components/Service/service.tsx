@@ -1,3 +1,5 @@
+import { BackgroundBeams } from "../ui/background-beams";
+import { WavyBackground } from "../ui/wavy-background";
 import { ServiceCard, ServiceProps } from "./service-card"
 const services: ServiceProps[] = [
     {
@@ -28,9 +30,9 @@ const services: ServiceProps[] = [
 
 function Services() {
     return (
-        <section id="services" className="p-8 bg-gray-400 backdrop-blur-sm flex flex-col justify-center items-center ">
+        <section id="services" className="p-8 w-full bg-background-primary-2 backdrop-blur-sm flex flex-col justify-center items-center relative overflow-hidden">
             <h1 className="text-4xl md:text-7xl font-extrabold text-white leading-tight mb-6">Services</h1>
-            <div className="grid grid-col-1 lg:grid-cols-2 gap-x-3.5">
+            <div className="grid grid-col-1 lg:grid-cols-2 gap-x-3.5 z-20">
                 {
                     services.map((service) => (
                         <ServiceCard
@@ -44,7 +46,8 @@ function Services() {
                     )
                 }
             </div>
-        </section>
+            <BackgroundBeams />
+        </section >
     )
 }
 

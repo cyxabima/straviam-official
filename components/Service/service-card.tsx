@@ -1,7 +1,6 @@
 "use client";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
 
 export type ServiceProps = {
@@ -21,7 +20,7 @@ export function ServiceCard({ title, description, url, imgUrl }: ServiceProps) {
                         className="h-40 object-fit rounded-xl group-hover/card:shadow-xl"
                         alt="thumbnail"
                     />
-                    <h1 className="text-primary-2 text-md md:text-2xl font-bold">{title}</h1>
+                    <h1 className="text-secondary text-md md:text-2xl font-bold">{title}</h1>
                 </CardItem>
 
                 <CardItem
@@ -36,7 +35,7 @@ export function ServiceCard({ title, description, url, imgUrl }: ServiceProps) {
                         <CardItem
                             translateZ={20}
                             as="button"
-                            className="px-4 py-2 rounded-xl bg-background-primary-2 text-white text-xs font-bold hover:cursor-pointer"
+                            className="px-4 py-2 rounded-xl bg-background-secondary text-white text-xs font-bold hover:cursor-pointer hover:bg-blue-700"
                         >
                             Learn More
                         </CardItem>

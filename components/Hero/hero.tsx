@@ -10,7 +10,7 @@ function Hero() {
 
             {/* overlay layer */}
             <div
-                className="absolute inset-0 -z-10 bg-[#00135F]/70 backdrop-blur-[1px]"
+                className="absolute inset-0 -z-10 bg-background-secondary/70 backdrop-blur-[1px]"
                 aria-hidden="true"
             ></div>
 

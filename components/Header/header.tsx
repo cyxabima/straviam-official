@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import MobileBar from './mobile-bar';
 
 function Header() {
     return (
@@ -21,14 +22,19 @@ function Header() {
                 </div>
             </a>
 
-            <div>
+
+            {/* Menu bar for desktop */}
+            <div className='hidden md:block'>
                 <ul className='flex gap-7 text-primary font-bold'>
                     <li className='hover:cursor-pointer'><Link href="#home"> Home </Link></li>
                     <li className='hover:cursor-pointer'><Link href="#services"> Services</Link></li>
                     <li className='hover:cursor-pointer'><Link href="#about"> About</Link></li>
-                    <li className='hover:cursor-pointer'><Link href=""> Contact</Link></li>
+                    <li className='hover:cursor-pointer'><Link href="#contact"> Contact</Link></li>
                 </ul>
             </div>
+
+            {/* Mobile navBar */}
+            <MobileBar />
         </nav>
     )
 }
