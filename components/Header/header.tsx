@@ -26,10 +26,10 @@ function Header() {
             {/* Menu bar for desktop */}
             <div className='hidden md:block'>
                 <ul className='flex gap-7 text-primary font-bold'>
-                    <li className='hover:cursor-pointer'><Link href="#home"> Home </Link></li>
-                    <li className='hover:cursor-pointer'><Link href="#services"> Services</Link></li>
-                    <li className='hover:cursor-pointer'><Link href="#about"> About</Link></li>
-                    <li className='hover:cursor-pointer'><Link href="#contact"> Contact</Link></li>
+                    <li className='hover:cursor-pointer hover:text-secondary hover:font-extrabold'><Link href="#home"> Home </Link></li>
+                    <li className='hover:cursor-pointer hover:text-secondary hover:font-extrabold'><Link href="#services"> Services</Link></li>
+                    <li className='hover:cursor-pointer hover:text-secondary hover:font-extrabold'><Link href="#about"> About</Link></li>
+                    <li className='hover:cursor-pointer hover:text-secondary hover:font-extrabold'><Link href="#contact"> Contact</Link></li>
                 </ul>
             </div>
 

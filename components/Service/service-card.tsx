@@ -12,9 +12,10 @@ export type ServiceProps = {
 
 export function ServiceCard({ title, description, url, imgUrl }: ServiceProps) {
     return (
-        <CardContainer className="py-0">
-            <CardBody className="bg-gray-50 relative group/card border-black/10 w-auto sm:w-120 h-auto rounded-xl p-6 border  ">
-                <CardItem translateZ="100" className="w-full mt-4 flex items-center gap-2 ">
+        <CardContainer className="shadow-2xl">
+            <CardBody className="bg-white relative group/card border-black/10 w-auto sm:w-120 h-auto rounded-xl p-6 border">
+
+                <CardItem translateZ="100" className="w-full mt-4 flex items-center gap-2 flex-col ">
                     <img
                         src={imgUrl}
                         className="h-40 object-fit rounded-xl group-hover/card:shadow-xl"
@@ -22,11 +23,10 @@ export function ServiceCard({ title, description, url, imgUrl }: ServiceProps) {
                     />
                     <h1 className="text-secondary text-md md:text-2xl font-bold">{title}</h1>
                 </CardItem>
-
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 font-bold text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-gray-600 leading-relaxed mt-4"
                 >
                     {description}
                 </CardItem>

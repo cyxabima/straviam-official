@@ -30,7 +30,7 @@ const services: ServiceProps[] = [
 
 function Services() {
     return (
-        <section id="services" className="p-8 w-full bg-background-primary-2 backdrop-blur-sm flex flex-col justify-center items-center relative overflow-hidden">
+        <section id="services" className="scroll-mt-20 px-4 py-8 md:px-8 w-full bg-background-primary-2 backdrop-blur-sm flex flex-col justify-center items-center relative overflow-hidden">
             <h1 className="text-4xl md:text-7xl font-extrabold text-white leading-tight mb-6">Services</h1>
             <div className="grid grid-col-1 lg:grid-cols-2 gap-x-3.5 z-20">
                 {
