@@ -1,5 +1,6 @@
 import About from "@/components/About/about";
 import Contact from "@/components/Contact/contact";
+import Footer from "@/components/Footer/footer";
 import Header from "@/components/Header/header";
 import Hero from "@/components/Hero/hero";
 import Separator from "@/components/separator";
@@ -16,6 +17,8 @@ export default function Home() {
       <About />
       <Separator />
       <Contact />
+      <Separator isRed />
+      <Footer />
     </>
   );
 }

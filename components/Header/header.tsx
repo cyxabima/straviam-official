@@ -6,7 +6,7 @@ function Header() {
     return (
         <nav className='flex flex-row items-center justify-around px-5h-[12vh] shadow-sm fixed w-screen z-30 bg-white'>
             {/* Nav Icon */}
-            <a href="/">
+            <Link href="/">
                 <div className='flex items-center justify-center'>
                     <Image src={"/assets/images/Straviam-Logo.webp"} alt="logo"
                         width={70}
@@ -20,7 +20,7 @@ function Header() {
                     />
 
                 </div>
-            </a>
+            </Link>
 
 
             {/* Menu bar for desktop */}

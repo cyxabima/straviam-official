@@ -22,10 +22,10 @@ function HeroContent() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button className="px-8 py-4 bg-background-primary-2 text-white font-bold rounded-lg hover:bg-background-primary transition-all shadow-lg w-full sm:w-auto">
+                <button className="px-8 py-4 bg-background-primary-2 text-white font-bold rounded-lg hover:bg-primary hover:shadow-lg hover:shadow-red-500/30 transition-all active:scale-85 shadow-lg w-full sm:w-auto">
                     Build My Solution
                 </button>
-                <button className="px-8 py-4 bg-white/10 text-white font-bold rounded-lg border border-white/20 hover:bg-white/20 transition-all backdrop-blur-md w-full sm:w-auto">
+                <button className="px-8 py-4 bg-white/10 text-white font-bold rounded-lg border border-white/20 hover:bg-white/20 active:scale-85 transition-all backdrop-blur-md w-full sm:w-auto">
                     View Capabilities
                 </button>
             </div>

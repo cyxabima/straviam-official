@@ -8,6 +8,7 @@
   --color-background: var(--background);
   --color-background-primary: var(--primary);
   --color-background-primary-2: var(--primary-2);
+  --color-background-primary-hover: var(--primary-hover);
   --color-background-secondary: var(--secondary);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -87,6 +88,7 @@
   --popover-foreground: oklch(0.141 0.005 285.823);
   --primary: oklch(57.699% 0.21526 27.514);
   --primary-2: oklch(48.382% 0.1869 22.781);
+  --primary-hover: #991122;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(24.821% 0.13725 263.768);
   --secondary-foreground: oklch(0.21 0.006 285.885);
