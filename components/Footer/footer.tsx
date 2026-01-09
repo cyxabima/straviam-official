@@ -24,13 +24,23 @@ const Footer = () => {
                     {/* Social Media Handles */}
                     <div className="flex items-center gap-4 bg-white rounded-2xl px-4 py-2">
                         {/*We can also use array and loop over it */}
-                        <a href="https://www.instagram.com/straviam.official" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
+                        <a
+                            href="https://www.instagram.com/straviam.official"
+                            target="_blank" rel="noopener noreferrer"
+                            className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group"
+                        >
                             <Instagram className="w-5 h-5 text-secondary group-hover:text-white group-hover:scale-110 transition-transform" />
                         </a>
-                        <a href="https://www.linkedin.com/company/straviam" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
+                        <a href="https://www.linkedin.com/company/straviam"
+                            target="_blank" rel="noopener noreferrer"
+                            className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group"
+                        >
                             <Linkedin className="w-5 h-5 text-secondary group-hover:text-white group-hover:scale-110 transition-transform" />
                         </a>
-                        <Link href="https://www.facebook.com/profile.php?id=61586165601894&mibextid=ZbWKwL" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
+                        <Link href="https://www.facebook.com/profile.php?id=61586165601894&mibextid=ZbWKwL"
+                            target="_blank" rel="noopener noreferrer"
+                            className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group"
+                        >
                             <Facebook className="w-5 h-5 text-secondary group-hover:text-white group-hover:scale-110 transition-transform" />
                         </Link>
                     </div>
