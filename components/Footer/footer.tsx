@@ -1,16 +1,16 @@
-import { Github, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <footer className="bg-background-secondary py-8">
+        <footer className="">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-center">
 
                     {/* Logo */}
 
-                    <div className='rounded-4xl'>
+                    <div className='rounded-4xl bg-white'>
                         <Link href={"#home"}>
                             <Image
                                 alt='logo'
@@ -24,22 +24,22 @@ const Footer = () => {
                     {/* Social Media Handles */}
                     <div className="flex items-center gap-4 bg-white rounded-2xl px-4 py-2">
                         {/*We can also use array and loop over it */}
-                        <Link href="instagram.com" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
+                        <a href="https://www.instagram.com/straviam.official" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
                             <Instagram className="w-5 h-5 text-secondary group-hover:text-white group-hover:scale-110 transition-transform" />
-                        </Link>
-                        <Link href="linkedin.com" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
+                        </a>
+                        <a href="https://www.linkedin.com/company/straviam" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
                             <Linkedin className="w-5 h-5 text-secondary group-hover:text-white group-hover:scale-110 transition-transform" />
-                        </Link>
-                        <Link href="github.com" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
-                            <Github className="w-5 h-5 text-secondary group-hover:text-white group-hover:scale-110 transition-transform" />
+                        </a>
+                        <Link href="https://www.facebook.com/profile.php?id=61586165601894&mibextid=ZbWKwL" className="p-3 bg-background-secondary/20 rounded-full hover:bg-background-primary-2 transition-all duration-300 group">
+                            <Facebook className="w-5 h-5 text-secondary group-hover:text-white group-hover:scale-110 transition-transform" />
                         </Link>
                     </div>
 
                 </div>
 
-                <div className="mt-12 pt-8 border-t border-white/10 text-center text-blue-200/30 text-xs">
-                    © {new Date().getFullYear()} Straviam Tech. All rights reserved.
-                </div>
+            </div>
+            <div className=" p-8 text-center text-secondary text-xs">
+                © {new Date().getFullYear()} Straviam. All rights reserved.
             </div>
         </footer>
     );

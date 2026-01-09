@@ -1,4 +1,4 @@
-import { Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 
 function ContactDetail() {
     return (
@@ -20,7 +20,18 @@ function ContactDetail() {
 
                         <div>
                             <p className="text-xs text-blue-200 uppercase tracking-widest">Email us</p>
-                            <p className="font-medium">straviam.tech@gmail.com</p>
+                            <p className="font-medium">info@straviam.com</p>
+                        </div>
+                    </div>
+
+                    {/* Phone detail */}
+                    <div className="flex items-center gap-4">
+                        <div className="p-3 bg-white/10 rounded-lg">
+                            <Phone />
+                        </div>
+                        <div>
+                            <p className="text-xs text-blue-200 uppercase tracking-widest">Phone</p>
+                            <p className="font-medium">+92 312 3606592</p>
                         </div>
                     </div>
 
@@ -32,9 +43,10 @@ function ContactDetail() {
                         </div>
                         <div>
                             <p className="text-xs text-blue-200 uppercase tracking-widest">Based in</p>
-                            <p className="font-medium">NED UET, Karachi</p>
+                            <p className="font-medium">Karachi</p>
                         </div>
                     </div>
+
 
                 </div>
             </div>
