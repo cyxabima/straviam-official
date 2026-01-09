@@ -25,7 +25,7 @@ function RightAbout() {
                         <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Curiosity</div>
                     </div>
                     <div className="text-center">
-                        <div className="text-primary-2 font-bold text-2xl">NED</div>
+                        <div className="text-primary-2 font-bold text-2xl">KHI</div>
                         <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Roots</div>
                     </div>
                 </div>
